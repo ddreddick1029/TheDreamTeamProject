@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OnOffClick">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button layoutX="130.0" layoutY="156.0" mnemonicParsing="false" onAction="#redOne" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: red;" text="+1" />
+            <Button layoutX="130.0" layoutY="213.0" mnemonicParsing="false" onAction="#redTwo" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: red;" text="+2" />
+            <Button layoutX="130.0" layoutY="272.0" mnemonicParsing="false" onAction="#redFour" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: red;" text="+4" />
+            <Button layoutX="458.0" layoutY="157.0" mnemonicParsing="false" onAction="#greenOne" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: green;" text="+1" />
+            <Button layoutX="458.0" layoutY="214.0" mnemonicParsing="false" onAction="#greenTwo" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: green;" text="+2" />
+            <Button layoutX="458.0" layoutY="273.0" mnemonicParsing="false" onAction="#greenFour" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: green;" text="+4" />
+            <Label fx:id="red_score" layoutX="149.0" layoutY="103.0" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="green_score" layoutX="477.0" layoutY="103.0" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="main_timer_label" alignment="CENTER" layoutX="291.0" layoutY="203.0" text="00:00" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="start_button" layoutX="293.0" layoutY="247.0" mnemonicParsing="false" onAction="#startClicked" prefHeight="17.0" prefWidth="52.0" text="Start" textAlignment="CENTER" wrapText="true" />
+            <Label fx:id="red_label" alignment="CENTER" layoutX="77.0" layoutY="75.0" prefHeight="17.0" prefWidth="158.0" textAlignment="CENTER" />
+            <Label fx:id="green_label" alignment="CENTER" layoutX="405.0" layoutY="75.0" prefHeight="17.0" prefWidth="158.0" textAlignment="CENTER" />
+            <Label layoutX="302.0" layoutY="140.0" text="Period" />
+            <Label fx:id="period_label" alignment="CENTER" layoutX="282.0" layoutY="158.0" prefHeight="32.0" prefWidth="77.0" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="130.0" layoutY="330.0" mnemonicParsing="false" onAction="#redMinus" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: red;" text="-1" />
+            <Button layoutX="458.0" layoutY="330.0" mnemonicParsing="false" onAction="#greenMinus" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: green;" text="-1" />
+            <Button layoutX="281.0" layoutY="162.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="18.0" text="&lt;">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button layoutX="341.0" layoutY="162.0" mnemonicParsing="false" onAction="#forward" prefHeight="25.0" prefWidth="13.0" text="&gt;">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="stop_button" layoutX="294.0" layoutY="278.0" mnemonicParsing="false" onAction="#stopClicked" prefHeight="17.0" prefWidth="52.0" text="Stop" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="stop_button1" layoutX="294.0" layoutY="311.0" mnemonicParsing="false" onAction="#resetClicked" prefHeight="17.0" prefWidth="52.0" text="Reset" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="574.0" layoutY="14.0" mnemonicParsing="false" onAction="#submit_match" text="Submit" textAlignment="CENTER" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
